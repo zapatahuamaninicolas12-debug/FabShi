@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <canvas id="mapaJuego" width="800" height="500" style="border:1px solid #000; background: #333;"></canvas>
+    <script>
+        const canvas = document.getElementById("mapaJuego");
+        const ctx = canvas.getContext("2d");
+        
+        // Dibujamos un "país"
+        ctx.fillStyle = "red";
+        ctx.fillRect(50, 50, 100, 100); 
+        
+        canvas.addEventListener("click", function() {
+            alert("¡Has seleccionado una provincia!");
+        });
+    </script>
+</body>
+</html>
